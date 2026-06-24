@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SignalScope — local data and model artifacts
+data/
+models/
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+dist/
+.venv/
+venv/
