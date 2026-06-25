@@ -3,7 +3,7 @@ import pandas as pd
 import xgboost as xgb
 from pathlib import Path
 
-MODELS_DIR = Path(__file__).resolve().parent.parent / "models"
+MODELS_DIR = Path(__file__).resolve().parent / "models"
 
 TIER_LABELS = {
     0: "Poor",

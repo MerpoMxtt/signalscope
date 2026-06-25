@@ -220,6 +220,8 @@ __marimo__/
 # SignalScope — local data and model artifacts
 data/
 models/
+!api/models/
+!api/models/*.json
 outputs/
 
 # Python
