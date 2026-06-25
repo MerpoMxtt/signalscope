@@ -21,6 +21,8 @@ def engineer(df: pd.DataFrame) -> pd.DataFrame:
     df["log_d_kbps"] = np.log1p(df["avg_d_kbps"].clip(lower=1))
     df["log_u_kbps"] = np.log1p(df["avg_u_kbps"].clip(lower=1))
     df["log_lat_ms"] = np.log1p(df["avg_lat_ms"].clip(lower=1))
+    df["log_tests"]  = np.log1p(df["tests"].clip(lower=1))
+    df["log_devices"] = np.log1p(df["devices"].clip(lower=1))
 
     # Speed tier (classification target)
     df["speed_tier"] = pd.cut(
